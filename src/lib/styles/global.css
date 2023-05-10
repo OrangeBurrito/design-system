@@ -16,13 +16,18 @@
 
     --color-heading: var(--color-black);
     --color-text: var(--color-gray-50);
+    --color-text-subtle: var(--color-gray-40);
     --color-text-inverted: var(--color-white);
     --color-text-link: var(--color-blue-10);
 
     --color-background: var(--color-white);
     --color-background-dark: var(--color-gray-10);
+    --color-background-hover: var(--color-gray-20);
+    --color-background-selected: var(--color-blue-10);
+    --color-background-selected-hover: var(--color-blue-20);
     --color-border: var(--color-gray-30);
 
+    --space-0: 4px;
     --space-1: 8px;
     --space-2: 16px;
     --space-3: 32px;
@@ -33,6 +38,7 @@
     --space-inset-squish-1: var(--space-1) var(--space-2);
     --space-inset-squish-2: var(--space-2) var(--space-3);
 
+    --space-stack-0: var(--space-0);
     --space-stack-1: var(--space-1);
     --space-stack-2: var(--space-2);
     --space-stack-3: var(--space-3);
@@ -52,6 +58,9 @@
     --line-height-text: 1.5;
     --line-height-heading: 1.0;
 
+    --border-1: 1px solid var(--color-border);
+    --border-focus: 2px solid var(--color-blue-10);
+
     --font-body: 'Banana Grotesk', system-ui, sans-serif;
     --font-heading: 'Galaxie Copernicus', Georgia, serif;
 }
@@ -66,8 +75,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-heading);
 }
 
-h1 { font-size: var(--font-size-4) }
-h2 { font-size: var(--font-size-3) }
+h1 {
+    font-size: var(--font-size-4);
+    margin-bottom: var(--space-stack-1);
+}
+
+h2 {
+    font-size: var(--font-size-3);
+    /* margin-bottom: var(--space-stack-0); */
+}
+
 h3 { font-size: var(--font-size-2) }
 
 p, span, a {

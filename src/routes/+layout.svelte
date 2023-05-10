@@ -2,7 +2,7 @@
     import '$lib/styles/reset.css'
     import '$lib/styles/global.css'
 
-	import UIShell from '$lib/components/ui_shell/UIShell.svelte';
+	import UIShell from '$lib/components/layout/ui_shell/UIShell.svelte';
 </script>
 
 <UIShell>
