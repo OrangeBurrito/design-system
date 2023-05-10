@@ -1,0 +1,83 @@
+:root {
+    --core-color-black: #000;
+    --core-color-gray-dark: #444;
+    --core-color-gray: #888;
+    --core-color-gray-light: #d5d5d5;
+    --core-color-gray-lighter: #f8f8f8;
+    --core-color-white: #fff;
+    --core-color-blue: #2270ee;
+
+    --color-accent: var(--core-color-blue);
+    --color-text-body: var(--core-color-black);
+    --color-text-body-subdued: var(--core-color-gray-dark);
+    --color-text-body-disabled: var(--core-color-gray);
+    --color-text-link: var(--color-accent);
+
+    --color-layout-background: var(--core-color-gray-lighter);
+    --color-layout-surface: var(--core-color-white);
+    --color-layout-surface-raised: var(--core-color-gray-light);
+
+    --color-layout-border: var(--core-color-gray);
+
+    --font-body: 'Acumin Pro', sans-serif;
+    --font-heading: 'Acumin Pro Wide', sans-serif;
+
+    --elevation-base: none;
+    --elevation-flat: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --elevation-raised: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --elevation-overlay: 0 0 0 1px var(--color-layout-border), 0 1px 2px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    --space-base: 8px;
+
+    --space-0: 0;
+    --space-05: calc(var(--space-base) / 2); /* 4 */
+    --space-1: var(--space-base); /* 8 */
+    --space-2: calc(var(--space-base) * 2); /* 16 */
+    --space-3: calc(var(--space-base) * 3); /* 24 */
+    --space-4: calc(var(--space-base) * 4); /* 32 */
+    --space-5: calc(var(--space-base) * 6); /* 48 */
+    --space-6: calc(var(--space-base) * 8); /* 64 */
+
+    /* space inset and space inset squish, three each starting with 1 */
+    
+    --space-inset-1: var(--space-1);
+    --space-inset-2: var(--space-2);
+    --space-inset-3: var(--space-3);
+
+    --space-inset-squish-1: var(--space-1) var(--space-2);
+    --space-inset-squish-2: var(--space-2) var(--space-3);
+    --space-inset-squish-3: var(--space-3) var(--space-4);
+
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-layout-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+.elevation-base {
+    background-color: var(--color-layout-background);
+    box-shadow: var(--elevation-base);
+    z-index: 0;
+}
+
+.elevation-flat {
+    background-color: var(--color-layout-surface);
+    box-shadow: var(--elevation-flat);
+    z-index: 1;
+}
+
+.elevation-raised {
+    background-color: var(--color-layout-surface);
+    box-shadow: var(--elevation-raised);
+    z-index: 2;
+}
+
+.elevation-overlay {
+    box-shadow: var(--elevation-overlay);
+    z-index: 3;
+}
