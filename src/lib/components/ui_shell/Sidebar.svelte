@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
     import Link from '$lib/components/text/Link.svelte'
 </script>
 
@@ -19,4 +19,4 @@
         background-color: var(--color-layout-surface);
         padding: var(--space-inset-squish-2);
     }
-</style>
+</style> -->

@@ -1,20 +1,13 @@
 <script lang="ts">
-    import '../styles/reset.css'
-    import '../styles/global.css'
+    import '$lib/styles/reset.css'
+    import '$lib/styles/global.css'
 
-	import PageHeader from '$lib/components/layout/PageHeader.svelte';
-	import SideNav from '$lib/components/layout/SideNav.svelte';
+	import UIShell from '$lib/components/ui_shell/UIShell.svelte';
 </script>
 
-<PageHeader/>
-<page-content>
-    <SideNav/>
+<UIShell>
     <slot/>
-</page-content>
+</UIShell>
 
 <style>
-    page-content {
-        height: 100%;
-        display: flex;
-    }
 </style>
