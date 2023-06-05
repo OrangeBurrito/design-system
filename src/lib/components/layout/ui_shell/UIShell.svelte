@@ -5,8 +5,10 @@
 
 <ui-shell>
     <Header/>
-    <Sidebar/>
-    <slot/>
+    <!-- <Sidebar/> -->
+    <page-content>
+        <slot/>
+    </page-content>
 </ui-shell>
 
 <style>
@@ -14,5 +16,11 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
+    }
+
+    page-content {
+        display: flex;
+		flex-grow: 1;
+		overflow-y: auto;
     }
 </style>

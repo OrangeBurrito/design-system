@@ -1,0 +1,64 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-gray-10: #ECECEC;
+    --color-gray-20: #BABABA;
+    --color-gray-30: #999999;
+    --color-gray-40: #6A6A6A;
+    --color-gray-50: #3D3D3D;
+    --color-black: #000000;
+
+    --color-blue-10: #4F75FF;
+    --color-blue-20: #3D478A;
+    --color-green-10: #4FFF8D;
+    --color-green-20: #32A664;
+    --color-red-10: #FF4F5E;
+    --color-red-20: #8A3D3D;
+
+    --color-heading: var(--color-black);
+    --color-text: var(--color-gray-50);
+    --color-text-subtle: var(--color-gray-40);
+    --color-text-inverted: var(--color-white);
+    --color-text-link: var(--color-blue-10);
+
+    --color-background: var(--color-gray-10);
+    --color-background-alt: var(--color-white);
+    --color-background-hover: var(--color-gray-20);
+    --color-border: var(--color-gray-30);
+
+    --space-0: 4px;
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 32px;
+
+    --space-inset-1: var(--space-1);
+    --space-inset-2: var(--space-2);
+    --space-inset-3: var(--space-3);
+    --space-inset-squish-1: var(--space-1) var(--space-2);
+    --space-inset-squish-2: var(--space-2) var(--space-3);
+
+    --space-stack-0: var(--space-0);
+    --space-stack-1: var(--space-1);
+    --space-stack-2: var(--space-2);
+    --space-stack-3: var(--space-3);
+    --space-inline-1: var(--space-1);
+    --space-inline-2: var(--space-2);
+    --space-inline-3: var(--space-3);
+
+    --breakpoint-1: 600px;
+    --breakpoint-2: 900px;
+    --breakpoint-3: 1200px;
+
+    --font-size-1: 16px;
+    --font-size-2: 20px;
+    --font-size-3: 24px;
+    --font-size-4: 32px;
+
+    --line-height-text: 1.5;
+    --line-height-heading: 1.0;
+
+    --border-1: 1px solid var(--color-border);
+    --border-focus: 2px solid var(--color-blue-10);
+
+    --font-body: 'Banana Grotesk', system-ui, sans-serif;
+    --font-heading: 'Galaxie Copernicus', Georgia, serif;
+}

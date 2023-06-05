@@ -7,9 +7,9 @@
 import Page from "$lib/components/layout/Page.svelte";
 </script>
 
-<Page>
-    <h1 slot="title">Homepage</h1>
-    <p slot="description">the repository for the OrangeSystem design system</p>
+<Page title="Homepage"
+    description="the repository for the OrangeSystem design system">
+    <a href="/style_guide">Style Guide</a>
 
     <Form title="Bee Questionnaire">
         <Input label="Enter Favorite Bees" placeholder="input something"/>

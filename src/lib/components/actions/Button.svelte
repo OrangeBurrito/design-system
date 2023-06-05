@@ -33,11 +33,11 @@
     }
 
     .primary {
-        --color-button-background: var(--color-background-selected);
+        --color-button-background: var(--color-blue-10);
         --color-button-text: var(--color-text-inverted);
     }
 
-    .primary:hover { --color-button-background-hover: var(--color-background-selected-hover) }
+    .primary:hover { --color-button-background-hover: var(--color-blue-20) }
 
     .secondary {
         --color-button-background: var(--color-background-dark);

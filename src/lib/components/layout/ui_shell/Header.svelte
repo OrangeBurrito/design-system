@@ -10,7 +10,11 @@
 
 <style>
     header {
-        background-color: var(--color-background-dark);
+        background-color: var(--color-background-alt);
         padding: var(--space-inset-2);
+    }
+
+    h2 {
+        margin: 0;
     }
 </style>

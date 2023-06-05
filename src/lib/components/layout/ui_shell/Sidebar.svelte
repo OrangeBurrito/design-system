@@ -1,22 +1,21 @@
-<!-- <script lang="ts">
-    import Link from '$lib/components/text/Link.svelte'
+<script lang="ts">
+	// import { page } from "$app/stores";
+
+    // const routes = import.meta.glob('/src/routes/**/*.svelte')
+
+    // import('src/routes/**/*.svelte')
+
+    // console.log(routes)
 </script>
 
-<nav class="elevation-flat">
-        <li>
-        <Link href="/home">Home</Link>
-        </li>
-        <li>
-        <Link href="/about">About</Link>
-        </li>
-        <li>
-        <Link href="/contact">Contact</Link>
-        </li>
-</nav>
+<div class="sidebar">
+    <slot/>
+</div>
 
 <style>
-    nav {
-        background-color: var(--color-layout-surface);
-        padding: var(--space-inset-squish-2);
+    .sidebar {
+        width: 200px;
+        padding: var(--space-inset-2);
+        background: var(--color-background-alt);
     }
-</style> -->
+</style>
